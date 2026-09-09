@@ -1,6 +1,6 @@
 package settingform
 
-import "goforms"
+import "github.com/Go-Forms/GoForms"
 
 // SettingForm-designer.go is the generated-looking half of the WinForms-style
 // partial-class split: field declarations and initializeComponent() live
@@ -28,6 +28,7 @@ func (f *SettingForm) initializeComponent() {
 	f.button1.SetBounds(20, 20, 90, 30)
 	f.AddControl(f.button1)
 	f.colorPickerButton1 = goforms.NewColorPickerButton("ColorPickerButton", f.Form)
+	f.colorPickerButton1.Click.Handle(f.colorPickerButton1_Click)
 	f.colorPickerButton1.SetBounds(72, 92, 110, 30)
 	f.AddControl(f.colorPickerButton1)
 }

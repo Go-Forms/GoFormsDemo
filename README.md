@@ -28,7 +28,7 @@ GoFormsDemo/
       AboutForm.go
       AboutForm-designer.go
   main.go                     <- goforms.NewApplication + goforms.Run(mainForm)
-  go.mod                      <- require goforms v0.0.0 + replace goforms => ../GoForms
+  go.mod                      <- require github.com/Go-Forms/GoForms
 ```
 
 ## What it demonstrates
